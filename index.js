@@ -12,7 +12,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 
-app.use('/posts', postsRouter);
+app.use('/', postsRouter);
 
 app.use(express.static(__dirname + "/public"));
 
